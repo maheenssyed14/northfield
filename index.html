@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northfield Studio – Websites for small businesses</title>
+  <meta name="description" content="Northfield Studio designs and builds fast, clear websites for small businesses.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Northfield Studio home">Northfield</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn btn-small" href="#contact">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Websites that load fast and say exactly what you do.</h1>
+          <p class="lead">We design and build clear, mobile-friendly websites for small businesses. You get a site that is easy to update and easy for customers to use.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="#work">See our work</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-body">
+              <div class="mock-line mock-line-title"></div>
+              <div class="mock-line mock-line-title short"></div>
+              <div class="mock-line"></div>
+              <div class="mock-line medium"></div>
+              <div class="mock-button"></div>
+              <div class="mock-tiles"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>What we do</h2>
+        <p class="section-intro">Everything you need to get online and stay there.</p>
+
+        <div class="service-list">
+          <article class="service">
+            <h3>Design</h3>
+            <p>Layouts built around your customers' questions: what you offer, what it costs, and how to reach you.</p>
+          </article>
+          <article class="service">
+            <h3>Development</h3>
+            <p>Clean HTML, CSS and JavaScript. Pages that pass accessibility checks and work on any screen size.</p>
+          </article>
+          <article class="service">
+            <h3>Care and updates</h3>
+            <p>Hosting, backups and small content changes handled for you, so the site never goes stale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <h2>Recent work</h2>
+        <p class="section-intro">A few sites we have built. Swap the images in the images folder for screenshots of your own projects.</p>
+
+        <div class="work-grid">
+          <a class="project project-a" href="#">
+            <img src="images/project-bakery.svg" alt="Harbor Bakery website shown in a browser window" width="800" height="600" loading="lazy">
+            <span class="project-name">Harbor Bakery</span>
+            <span class="project-type">Online ordering site</span>
+          </a>
+          <a class="project project-b" href="#">
+            <img src="images/project-physio.svg" alt="Lena Ortiz Physio booking page shown in a browser window" width="800" height="600" loading="lazy">
+            <span class="project-name">Lena Ortiz Physio</span>
+            <span class="project-type">Booking and clinic info</span>
+          </a>
+          <a class="project project-c" href="#">
+            <img src="images/project-plumbing.svg" alt="Keystone Plumbing website shown in a browser window" width="800" height="600" loading="lazy">
+            <span class="project-name">Keystone Plumbing</span>
+            <span class="project-type">Service area and quotes</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <h2>A small team that answers its email</h2>
+        </div>
+        <div class="about-text">
+          <p>Northfield is a two-person studio. You work directly with the people designing and building your site, from the first call to launch day and beyond.</p>
+          <p>We keep projects small and scoped. Most sites go live within four weeks, with a fixed price agreed up front.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-dark" id="contact">
+      <div class="container contact">
+        <div>
+          <h2>Tell us about your project</h2>
+          <p class="section-intro">Share a few details and we will reply within one working day.</p>
+        </div>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-light" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Northfield Studio</p>
+      <ul>
+        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+        <li><a href="#top">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+
+    nav.addEventListener('click', (e) => {
+      if (e.target.closest('a')) {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      }
+    });
+
+    // Contact form validation (connect to your own backend or form service to send)
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        status.textContent = 'Please fill in your name, email and message.';
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = 'Enter a valid email address, like name@example.com.';
+        return;
+      }
+      status.textContent = 'Thanks, ' + name + '. Your message is ready to send once the form is connected.';
+      form.reset();
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
